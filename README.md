@@ -37,7 +37,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Bolazcoding/Loopstudios-landing-page)
-- Live Site URL: [Live site URL](https://ecommerce-product-page-olive-omega.vercel.app/)
+- Live Site URL: [Live site URL](https://loopstudios-landing-page-dun.vercel.app/)
 
 ## My process
 
