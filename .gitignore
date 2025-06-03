@@ -1,0 +1,8 @@
+# Design files (please do not remove 🙂)
+/design
+.parcel-cache
+node_modules
+dist
+/.prettierrc
+/style-guide.md
+

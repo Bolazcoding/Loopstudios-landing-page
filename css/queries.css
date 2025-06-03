@@ -1,0 +1,290 @@
+/* // 1160px */
+@media (max-width: 72.5em) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero-section {
+    height: 70vh;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 630px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .about-details {
+    top: 34.5%;
+  }
+}
+
+/* // 1010px */
+@media (max-width: 63.125em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-section {
+    height: 65vh;
+  }
+
+  .about-details {
+    top: 39.3%;
+    left: 55%;
+    padding: 8rem 0 0 8rem;
+  }
+}
+
+/* // 910px */
+@media (max-width: 56.875em) {
+  .container {
+    max-width: 95rem;
+  }
+
+  html {
+    font-size: 45%;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 550px;
+  }
+
+  .about-details {
+    top: 47%;
+    left: 57%;
+  }
+
+  .about-text {
+    font-size: 1.4rem;
+  }
+}
+
+/* 730px */
+@media (max-width: 45.625em) {
+  .container {
+    max-width: 75rem;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+    margin-top: 12rem;
+  }
+
+  .sidebar-list {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  .sidebar-list-item:link,
+  .sidebar-list-item:visited {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    background-color: var(--Black);
+    width: 100%;
+    height: 100vh;
+  }
+
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: var(--Black); */
+    padding-top: 3rem;
+  }
+
+  .open-menu-image {
+    font-size: 3.6rem;
+    color: var(--White);
+    cursor: pointer;
+  }
+
+  .close-outline {
+    color: var(--White);
+  }
+
+  .hero-text {
+    width: 70%;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-details {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .about-text {
+    font-size: 2rem;
+  }
+  .product-details::after {
+    font-size: 2.4rem;
+  }
+}
+
+/* // 600px */
+@media (max-width: 37.5em) {
+  .container {
+    max-width: 60rem;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  .products-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'grid--1' 'grid--2' 'grid--3' 'grid--4'
+      'grid--5' 'grid--6' 'grid--7' 'grid--8';
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+  }
+
+  .list-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .Loopstudios-contact {
+    margin-top: 3rem;
+  }
+
+  .product-details::after {
+    font-size: 3.2rem;
+    padding-left: 4rem;
+  }
+
+  .product-header {
+    justify-content: center;
+  }
+
+  .read-more:link {
+    display: none;
+  }
+
+  .read-more-mobile:link,
+  .read-more-mobile:visited {
+    display: block;
+    justify-self: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    padding: 1rem 5.5rem;
+  }
+
+  .product1::after {
+    top: 5.5%;
+  }
+
+  .product2::after {
+    top: 18%;
+  }
+
+  .product3::after {
+    top: 31%;
+  }
+
+  .product4::after {
+    top: 43.5%;
+  }
+
+  .product5::after {
+    top: 56%;
+  }
+
+  .product6::after {
+    top: 68.5%;
+  }
+
+  .product7::after {
+    top: 81%;
+  }
+
+  .product8::after {
+    top: 93.5%;
+  }
+}
+
+/* // 500px */
+@media (max-width: 31.25em) {
+  .container {
+    max-width: 45rem;
+  }
+
+  .hero-section {
+    background-image: url(../images/mobile/image-hero.jpg);
+    height: 85vh;
+  }
+}
+
+@media (max-width: 21.875em) {
+  html {
+    font-size: 40%;
+  }
+
+  .container {
+    max-width: 42rem;
+  }
+
+  .hero-text {
+    font-size: 2.7rem;
+  }
+}
+
+.read-more {
+  justify-self: flex-end;
+}

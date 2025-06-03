@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;200;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Grey-200: hsl(0, 0%, 85%);
+  --Grey-200-link: hsla(0, 4%, 70%, 0.801);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+}
+
+.hero-section {
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  /* padding: 0 10rem 10rem 10rem; */
+}
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: 'Alata', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+/* .company-name {
+  font-size: 2.8rem;
+  color: var(--White);
+  text-transform: lowercase;
+} */
+
+.company-logo {
+  width: 20rem;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  flex-direction: row;
+}
+
+.list-item:link,
+.list-item:visited {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--White);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list-item:hover,
+.list-item:focus {
+  border-bottom: 1px solid var(--White);
+  padding-bottom: 1rem;
+}
+
+.menu {
+  display: none;
+}
+
+.hero-section-body {
+  padding-top: 12rem;
+}
+
+.hero-text {
+  width: 55%;
+  border: 1px solid var(--Grey-200);
+  color: var(--White);
+  font-weight: 200;
+  font-size: 3rem;
+  padding: 3rem;
+  text-transform: uppercase;
+}
+
+.about {
+  position: relative;
+  margin-top: 15rem;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.about-details {
+  background-color: var(--White);
+  top: 40%;
+  left: 52%;
+  position: absolute;
+  padding: 10rem 0 0 10rem;
+}
+
+.about-product-header {
+  font-size: 4rem;
+  font-family: 200;
+  color: var(--Black);
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-family: 'Alata', sans-serif;
+  font-size: 1.5rem;
+  color: var(--Black);
+  line-height: 1.5;
+  opacity: 60%;
+  padding-top: 3rem;
+}
+
+.our-creations {
+  margin-top: 15rem;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-more:link,
+.read-more:visited {
+  font-family: 'Alata', sans-serif;
+  display: inline-block;
+  border: 2px solid var(--Grey-200-link);
+  font-size: 1.4rem;
+  color: var(--Black);
+  padding: 0.5rem 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* opacity: 70%; */
+}
+
+.read-more-mobile:link {
+  display: none;
+}
+
+.read-more:hover,
+.read-more:focus {
+  background-color: var(--Black);
+  color: var(--White);
+}
+
+.products-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'grid--1 grid--2 grid--3 grid--4'
+    'grid--5 grid--6 grid--7 grid--8';
+  gap: 2rem;
+  position: relative;
+  margin-top: 5rem;
+  /* width: 100%; */
+}
+
+.products-body > :nth-child(1) {
+  grid-area: grid--1;
+}
+
+.products-body > :nth-child(2) {
+  grid-area: grid--2;
+}
+
+.products-body > :nth-child(3) {
+  grid-area: grid--3;
+}
+
+.products-body > :nth-child(4) {
+  grid-area: grid--4;
+}
+
+.products-body > :nth-child(5) {
+  grid-area: grid--5;
+}
+
+.products-body > :nth-child(6) {
+  grid-area: grid--6;
+}
+
+.products-body > :nth-child(7) {
+  grid-area: grid--7;
+}
+
+.products-body > :nth-child(8) {
+  grid-area: grid--8;
+}
+
+.product-image {
+  filter: brightness(75%);
+  cursor: pointer;
+}
+
+.product-details::after {
+  content: 'Deep Earth';
+  /* background-color: red; */
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--Grey-200);
+  text-transform: uppercase;
+  white-space: pre;
+  /* width: 100%; */
+  position: absolute;
+  padding-left: 3rem;
+}
+
+.product1::after {
+  content: 'Deep \A Earth';
+}
+
+.product2::after {
+  content: 'Night \A Arcade';
+}
+
+.product3::after {
+  content: 'Soccer \A Team VR';
+}
+
+.product4::after {
+  content: 'The \A Grid';
+}
+
+.product-row1::after {
+  top: 37%;
+}
+
+.product5::after {
+  content: 'From up \A above VR';
+}
+
+.product6::after {
+  content: 'Pocket \A Borealis';
+}
+
+.product7::after {
+  content: 'The \A curiosity';
+}
+
+.product8::after {
+  content: 'Make it \A fisheye';
+}
+
+.product-row2::after {
+  top: 87%;
+}
+
+.product-image:hover {
+  opacity: 80%;
+}
+
+/* .product-name {
+  position: absolute;
+  top: 88%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--Grey-200);
+  text-transform: uppercase;
+  padding-left: 4rem;
+}
+
+.product-col1 {
+  position: absolute;
+  top: 38%;
+} */
+
+.hidden {
+  display: none;
+}
+
+.footer-container {
+  background-color: var(--Black);
+  margin-top: 15rem;
+}
+
+.footer {
+  font-family: 'Alata', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.footer-ul {
+  margin-top: 2rem;
+}
+
+.footer-copy {
+  color: var(--Grey-200);
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  opacity: 90%;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  border-bottom: 1px solid var(--White);
+  padding-bottom: 0.5rem;
+}
