@@ -27,7 +27,7 @@ body {
   background-image: url(../images/desktop/image-hero.jpg);
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   /* padding: 0 10rem 10rem 10rem; */
 }
 
@@ -42,12 +42,6 @@ body {
   justify-content: space-between;
   padding-top: 3rem;
 }
-
-/* .company-name {
-  font-size: 2.8rem;
-  color: var(--White);
-  text-transform: lowercase;
-} */
 
 .company-logo {
   width: 20rem;

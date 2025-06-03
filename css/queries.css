@@ -5,7 +5,7 @@
   }
 
   .hero-section {
-    height: 70vh;
+    min-height: 70vh;
   }
 
   .product-image {
@@ -30,7 +30,7 @@
   }
 
   .hero-section {
-    height: 65vh;
+    min-height: 65vh;
   }
 
   .about-details {
@@ -267,10 +267,11 @@
 
   .hero-section {
     background-image: url(../images/mobile/image-hero.jpg);
-    height: 85vh;
+    min-height: 85vh;
   }
 }
 
+/* 350px */
 @media (max-width: 21.875em) {
   html {
     font-size: 40%;
